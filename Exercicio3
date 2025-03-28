@@ -1,0 +1,39 @@
+ArrayList<String> listadealunos = new ArrayList();
+        ArrayList<Double> listadenotas = new ArrayList();
+        int opcao;
+        
+        do{
+        System.out.println("Insira nome do aluno:");
+        Scanner info = new Scanner(System.in);
+        String alunos = info.nextLine();
+        
+        listadealunos.add(alunos);
+        
+        System.out.println("Insira nota do aluno:");
+        Scanner info2 = new Scanner (System.in);
+        double notas = info.nextDouble();
+        
+        listadenotas.add(notas);
+        
+                
+        if (notas <=6) {
+            listadenotas.remove((notas));
+            listadealunos.remove((alunos));
+        }
+        else{
+            
+                    }
+        System.out.print(listadealunos);
+        System.out.print(listadenotas);
+        
+         System.out.println("Deseja Continuar?");
+            System.out.println(" 1-Sim 2-Nao");
+         Scanner numero = new Scanner(System.in);
+        opcao = numero.nextInt();
+        
+        }while(opcao != 2);
+        System.out.println("Processo encerrado");
+        System.out.println("Alunos que passaram: ");
+        
+        System.out.print(listadealunos);
+        System.out.println(listadenotas);
