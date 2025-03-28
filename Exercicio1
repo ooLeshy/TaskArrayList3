@@ -1,0 +1,18 @@
+ * @author saulo
+ */
+public class Exercício1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        //LISTA DE LIVROS
+        ArrayList<String> listadelivros = new ArrayList<>();
+        listadelivros.add("Blue Lock");
+        listadelivros.add("Alice no Pais das Maravilhas");
+        listadelivros.add("Blue Lock");
+        
+        System.out.println(listadelivros);
+    }
+}
