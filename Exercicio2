@@ -1,0 +1,49 @@
+* @author saulo
+ */
+public class Exercício2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        //EMPRESTAR LIVROS
+        ArrayList<String> livros = new ArrayList<>();
+        
+                livros.add("Blue Lock");
+                livros.add("Demon Slayer");
+                livros.add("Jujutsu Kaisen");
+                livros.add("One Piece");
+                livros.add("Chainsaw Man");
+                
+        System.out.println("Lista de livros já cadastrados:");
+        
+        for (String livro : livros) 
+        {
+            System.out.println(livro);
+        }
+        System.out.print("Digite o nome do livro que deseja emprestar: ");
+        Scanner scanner = new Scanner(System.in);
+        String livroEmprestado = scanner.nextLine();
+                
+        emprestarLivro(livros, livroEmprestado);
+        System.out.println("Lista de livros atualizada:");
+        for (String livro : livros) 
+        {
+            System.out.println(livro);
+        }
+    }
+    
+    public static void emprestarLivro(ArrayList<String> livros, String nomeLivro) 
+    {
+        if (livros.contains(nomeLivro)) 
+        {
+            livros.remove(nomeLivro);
+            System.out.println("O livro '" + nomeLivro + "' foi emprestado com sucesso.");
+        }
+        else 
+        {
+            System.out.println("O livro '" + nomeLivro + "' não está disponível na lista.");
+    }
+    }
+}
