@@ -34,7 +34,9 @@ public class Exercício2 {
         }
     }
     
-    public static void emprestarLivro(ArrayList<String> livros, String nomeLivro) 
+    public static void 
+
+        emprestarLivro(ArrayList<String> livros, String nomeLivro) 
     {
         if (livros.contains(nomeLivro)) 
         {
